@@ -1,0 +1,125 @@
+@import "~bootstrap/scss/bootstrap";
+
+
+// -------------global scss --------------------
+
+.btn-brand {
+    background: #11998e;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #38ef7d, #11998e);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    outline: none;
+    border: none;
+    border-radius: 15px;
+}
+
+.brand-color {
+    color: #38ef7d;
+}
+
+.border-style {
+    padding: 0;
+    position: relative;
+    height: 100px;
+}
+
+.border-style:before {
+    content: "";
+    display: block;
+    width: 150px;
+    background-color: #e1e1e1;
+    height: 3px;
+    margin: 7px auto;
+    background: linear-gradient(to right, #0d6b63, #14d65f 50%, #0f7970);
+}
+
+// ------------- Navbar & header scss -----------
+@import "./components/Home/Header/header";
+
+// --------------------- -- popular course ----------------
+
+@import "./components/Home/PopularCourse/popularCourse";
+
+// ------------------categories -------------------
+.category-title {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: white;
+    padding: 5px 7px;
+}
+
+// ------------------news -------------------
+@import "./components/Home/News/news";
+
+// -----------------gallery------------------
+
+@import "./components/Home/Gallery/gallery";
+
+
+// --------------------footer--------------------
+
+@import "./components/Footer/footer";
+
+// ---------------------about container -----------
+
+.about-course {
+    background-color: black;
+
+    i {
+        font-size: 40px;
+        margin-bottom: 10px;
+        color: #1da551;
+    }
+}
+
+.about-choose,
+.about-founders,
+.courseDetails {
+    background-color: #f5f3f3;
+}
+
+// ----------------------blog -----------------
+@import "./components/Blog/blog";
+// ---------------------admission--------------
+
+@import "./components/Admission/admission";
+
+
+
+// -------------------media query---------------
+
+@media(max-width:990px) {
+    .navbar {
+        background: linear-gradient(to right, #38ef7d, #11998e);
+        z-index: 99;
+    }
+
+    .gallery-info {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .admission-stepOne {
+        width: 100%;
+    }
+}
+
+@media (max-width : 400px) {
+    .header-info {
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        transform: translate(-10%, -50%);
+        color: white;
+    }
+
+    
+}
+

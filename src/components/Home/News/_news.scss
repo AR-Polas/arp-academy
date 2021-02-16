@@ -1,0 +1,35 @@
+.news-container {
+
+    h6 {
+        color: black;
+    }
+    &:hover h6 {
+        color: #1da551
+    }
+    .news-img {
+        position: relative;
+        height: 150px;
+        overflow: hidden;
+
+        img {
+            transition: 1s;
+            transform: scale(1.1, 1.1);
+        }
+    }
+
+    &:hover img {
+        transform: scale(1, 1);
+    }
+
+    .news-date {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .news-date p {
+        background-color: #1da551;
+        padding: 5px 5px;
+        color: white;
+    }
+}

@@ -1,0 +1,70 @@
+.active_page {
+    background: linear-gradient(to right, #38ef7d, #11998e);
+}
+
+.navbar-brand {
+    color: white !important;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+Nav a {
+    color: white !important;
+    font-size: 1.3rem;
+    margin-right: 10px;
+    text-decoration: none !important;
+    padding: 2px 7px;
+    border-radius: 5px;
+
+}
+
+
+.navbar-light .navbar-toggler {
+    background-color: rgb(201, 193, 193);
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.582)), url('../../../images/banner.jpg');
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    position: relative;
+
+}
+
+.header-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+
+    .search-container {
+        position: relative;
+    }
+
+    .search-container input[type=text] {
+        padding: 6px;
+        margin-top: 8px;
+        font-size: 17px;
+        border: 2px solid #11998e;
+        outline: none;
+        border-radius: 7px;
+
+    }
+
+    .search-container button {
+        position: absolute;
+        top: 0;
+        right: -15px;
+        padding: 6px 12px;
+        margin-top: 10px;
+        margin-right: 16px;
+        background: linear-gradient(to right, #38ef7d, #11998e);
+        color: white;
+        font-size: 17px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+}

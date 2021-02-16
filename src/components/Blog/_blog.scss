@@ -1,0 +1,20 @@
+
+.blog-img {
+    width: 300px;
+    height: 300px;
+}
+
+.blog-tags p {
+    color: blue;
+    cursor: pointer;
+    line-height: 15px;
+
+    &:hover{
+        color: #0d6b63;
+    }
+}
+.blog-writer-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
